@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,124 +8,385 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <nav class="sidebar close">
         <header>
-        <div class="image-text">
+            <div class="image-text">
 
-            <span class="image">
-                <img src="logo1.png" alt="logo">
-            </span>
+                <span class="image">
+                    <img src="logo1.png" alt="logo">
+                </span>
 
-            <div class="text header-text">
-                <span class="name ">Ayur GPT</span>
+                <div class="text header-text">
+                    <span class="name ">Ayur GPT</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+
+                    <li class="search-box">
+
+                        <i class='bx bx-search-alt-2 icon'></i>
+                        <input type="search" placeholder="Search..">
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="" id="dashboard-link">
+                            <i class='bx bx-home-alt-2 icon'></i>
+                            <span class="text nav-text">
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="" id="health-link">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text">
+                                Healthline
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="" id="ayurbot-link">
+                            <i class='bx bx-chat icon'></i>
+                            <span class="text nav-text">
+                                AyurBot
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="" id="services-link">
+                            <i class='bx bxs-book-open icon'></i>
+                            <span class="text nav-text">
+                                Services
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="" id="about-link">
+                            <i class='bx bx-message-alt icon'></i>
+                            <span class="text nav-text">
+                                About us
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="">
+                    <a href="">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
             </div>
         </div>
-        <i class='bx bx-chevron-right toggle'></i>
-    </header>
-    <div class="menu-bar">
-        <div class="menu">
-            <ul class="menu-links">
-
-                <li class="search-box">
-                 
-                    <i class='bx bx-search-alt-2 icon' ></i>
-                      <input type="search" placeholder="Search..">
-                </li>
-
-                <li class="nav-link">
-                    <a href="">
-                        <i class='bx bx-home-alt-2 icon' ></i>
-                        <span class="text nav-text">
-                            Dashboard
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="">
-                        <i class='bx bx-heart icon' ></i>
-                        <span class="text nav-text">
-                            Healthy Heart
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="">
-                        <i class='bx bx-bell icon' ></i>
-                        <span class="text nav-text">
-                            Notifications
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="">
-                        <i class='bx bx-pie-chart-alt icon' ></i>
-                        <span class="text nav-text">
-                            Analytics
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="">
-                        <i class='bx bx-message-alt icon' ></i>
-                        <span class="text nav-text">
-                            About us
-                        </span>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-        <div class="bottom-content">
-            <li class="">
-                <a href="">
-                    <i class='bx bx-log-out icon' ></i>
-                    <span class="text nav-text">
-                        Logout
-                    </span>
-                </a>
-            </li>
-
-            <li class="mode">
-                <div class="moon-sun">
-                    <i class='bx bx-moon icon moon' ></i>
-                    <i class='bx bx-sun icon sun' ></i>
-                </div>
-                <span class="mode-text text">Dark Mode</span>
-               
-                <div class="toggle-switch">
-                    <span class="switch"></span>
-                </div>
-            </li>
-
-        </div>
-    </div>
     </nav>
 
     <section class="home">
- <div class="nav">
-    <div class="box0"><i class='bx bx-menu icon'></i></div>
-    <div class="box1 text">
-     New chat
-    </div>
-    <div class="box2">+</div>
-    
- </div>
-<div class="center-logo">
-    <div class="ll">AyurGPT</div>
-</div>
-<div class="footer">
-   <div class="bottom-search">
-    <input type="text" placeholder="  Seach a message" class="ss">
-    <i class='bx bx-send send' ></i>
+        <div class="Ayurgpt" id="ayurbot-content">
+            <div class="nav">
+                <div class="box0"><i class='bx bx-menu icon'></i></div>
+                <div class="box1 text">
+                    New chat
+                </div>
+                <div class="box2">+</div>
 
-   </div>
+            </div>
+            <div class="center-logo">
+                <div class="ll">AyurGPT</div>
+            </div>
+            <div class="footer">
+                <div class="bottom-search">
+                    <input type="text" placeholder="  Seach a message" class="ss">
+                    <i class='bx bx-send send'></i>
 
-</div>
-</section>
+                </div>
+
+            </div>
+        </div>
+        <div class="services-content" id="service-cont">
+            <div class="ayush-services">
+                <span>Ayush Services</span>
+            </div>
+            <div class="box-container1">
+                <div class="b" onmouseenter="playVideo('videoId1')">
+
+                    <video id="videoId1">
+                        <source src="video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="tt-text">Ayurveda</span>
+
+                </div>
+                <div class="b" onmouseenter="playVideo('videoId2')">
+                    <video id="videoId2">
+                        <source src="video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="tt-text">Yoga & Naturopathy</span>
+                </div>
+                <div class="b" onmouseenter="playVideo('videoId6')">
+                    <video id="videoId6">
+                        <source src="video6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="tt-text">Unani</span>
+                </div>
+
+                <div class="b" onmouseenter="playVideo('videoId3')">
+                    <video id="videoId3">
+                        <source src="video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="tt-text">Siddha</span>
+                </div>
+                <div class="b" onmouseenter="playVideo('videoId4')">
+                    <video id="videoId4">
+                        <source src="video4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="tt-text">Sowa Rigpa</span>
+                </div>
+                <div class="b" onmouseenter="playVideo('videoId5')">
+                    <video id="videoId5">
+                        <source src="video5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="tt-text">
+                        Homeopathy
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="ayurveda-content">
+
+            <div class="ayur-photo">
+                <img src="Ayurveda_content.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content2.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content3.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content4.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content5.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content6.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content7.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content8.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content9.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content10.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content11.png" alt="">
+            </div>
+            <div class="ayur-photo">
+                <img src="Ayurveda_content12.png" alt="">
+            </div>
+
+        </div>
+
+
+        <div id="healthline-content">
+            <div class="health-head">Ayur Tips To Live a Healthier Life </div>
+            <div class="fruit-image">
 
 
 
+                <div class="para">
+                    <p class="p1">> How healthy are you? Do you have a healthy diet? Do you exercise regularly? Do you
+                        drink
+                        at least eight glasses of water a day? Do you get enough sleep every day? Do you live a healthy
+                        lifestyle?
+                    </p>
+                    <p class="p2">> Our body is our temple and we need to take care of it. Do you know that over 70% of
+                        Americans are either obese or overweight?[1] That’s insane! Think of your body as your physical
+                        shell to take you through life. If you repeatedly abuse it, your shell will wear out quickly.
+                    </p>
+                    <p class="p3">> Life is beautiful and you don’t want to bog yourself down with unnecessary health
+                        problems. Today, your vital organs may be working well, but they may not be tomorrow. Don’t take
+                        your health for granted. Take proper care of your body.</p>
+                    <p class="p4">> Good health isn’t just about healthy eating and exercise — it’s also about having a
+                        positive attitude, a positive self-image, and a healthy lifestyle. In this article, I share 45
+                        tips
+                        to live a healthier life. Bookmark this post and save the tips, because they will be vital to
+                        living
+                        a healthier life. :)</p>
+                    <p class="p5">1. <b>Drink more water</b>. Most of us don’t drink enough water every day. Water is
+                        essential for our bodies to function. Do you know over 60% of our body is made up of water?
+                        Water is needed to carry out body functions, remove waste, and carry nutrients and oxygen around
+                        our body. Since we lose water daily through urine, bowel movements, perspiration, and breathing,
+                        we need to replenish our water intake.</p>
+                    <p class="p6">Furthermore, drinking water helps in losing weight. A Health.com study carried out
+                        among overweight or obese people showed that water drinkers lose 4.5 more pounds than a control
+                        group! The researchers believe that it’s because drinking more water helps fill your stomach,
+                        making you less hungry and less likely to overeat.</p>
+                    <p class="7">The amount of water we need is dependent on various factors such as humidity, your
+                        physical activity, and your weight, but generally, we need 2.7-3.7 liters of water intake per
+                        day.[2] Since food intake contributes about 20% of our fluid intake, that means we need to drink
+                        about 2.0-3.0 liters of water or about 8-10 glasses (now you know how the 8 glasses
+                        recommendation came about!). One way to tell if you’re hydrated — your urine should be slightly
+                        yellow. If it’s not, like it’s dark yellow or even orange, you’re not getting enough water!
+                        Other signs include dry lips, dry mouth, and little urination. Go drink some water first before
+                        you continue this article!</p>
+                    <p class="p8">2. <b> Get enough sleep</b>. When you don’t rest well, you compensate by eating more.
+                        Usually,
+                        it’s junk food. Get enough rest and you don’t need to snack to stay awake. Also, lack of sleep
+                        causes premature aging and you don’t want that</p>
+                    <p class="p9">3. <b>Still Meditation or Mindfulness Meditation — </b> by focusing your attention
+                        on an object or process, such as your breathing, a flame, a mantra, a visualization, music, etc.
+                        An open focus is maintained. This means even though you are concentrating on something, you keep
+                        an open awareness of everything else that is happening around you and inside your mind.
+                        <br>
+                        <b>Moving or Walking Meditation — </b> awareness through using simple repetitive steps. Some
+                        examples are Tai Chi, yoga or even simple walking exercises. <br>
+                        <b>Concentration Meditation — </b> is usually practised in religions. It is similar to
+                        mindfulness
+                        meditation with 2 differences (1) you concentrate on a religious prayer (2) you are required to
+                        maintain a closed focus where you close your awareness off from anything other than the prayer.
+                    </p>
+                    <p>
+                        4. <b>Exercise. Movement is life.</b> Research has shown that exercising daily brings tremendous
+                        benefits
+                        to our health, including an increase in lifespan, lowering of risk of diseases, higher bone
+                        density, and weight loss. Increase the activity in your life. Choose walking over transport for
+                        close distances. Climb the stairs instead of taking the lift. Join an aerobics class or a dance
+                        class. Pick a sport of your liking
+                    </p>
+                    <p>
+                        5. <b>Pick exercises that you enjoy.</b> When you enjoy a sport, you naturally want to do it.
+                        Exercise
+                        isn’t about suffering and pushing yourself; it’s about being healthy and having fun at the same
+                        time. Adding variation in your exercises will keep them interesting. What exercises do you like
+                        and how can you include them in your routine?
+                    </p>
+                    <p>
+                        6. <b>Work out different parts of your body.</b> Don’t just do cardio (like jogging). Give your
+                        body a
+                        proper workout. The easiest way is to engage in sports since they work out different muscle
+                        groups. Popular activities where you can get a good body workout are trekking, hiking, swimming,
+                        basketball, tennis, squash, badminton, yoga, and frisbee.
+                    </p>
+                    <p>
+                        7. <b>Eat fruits.</b> Fruits have a load of vitamins and minerals. Do you know that oranges
+                        offer more
+                        health benefits than vitamin C pills? As much as possible, consume your vitamins and minerals
+                        through your diet rather than through pills. I eat a variety of fruits every morning and they
+                        energize me. Satisfy your palate with these nutritious fruits: Banana, Papaya, Kiwi,
+                        Strawberries, Blueberries, Blackberries, Raspberries, Watermelon, Rockmelon, Honeydew, Peach,
+                        Apple, Grapefruit, Pomelo, Mango, Orange.
+                    </p>
+                    <p>
+                        8. <b>Eat vegetables.</b> Vegetables are the source of many nutrients and minerals like folate,
+                        vitamin K,
+                        folate, vitamin A, manganese, and potassium, not to mention dietary fiber which is important for
+                        good gut health. There are two types of vegetables: Starchy vegetables like potato, sweet
+                        potato, yam, and pumpkin; and non-starchy vegetables like kale, arugula, spinach, broccoli,
+                        brussels sprouts, long beans, tomato, cucumber, and mushroom (technically a fungus). Some
+                        vegetables are slightly starchy and hence fall in the middle: Corn, green peas, carrot,
+                        artichoke, beetroot, cauliflower, and beans (technically legumes). All vegetables are important
+                        and enrich our diet. <br>
+                        I typically have raw salads for lunch every day with a variety of vegetables, then a cooked
+                        dinner with grains, potatoes/sweet potatoes, and other delicious vegetables. You want to have a
+                        variety of vegetable intake to strengthen your immune system
+                    </p>
+                    <p>
+                        9. <b>Pick different-colored fruits/vegs.</b> Always consume a wide variety of fruits and
+                        vegetables of
+                        different colors. Firstly, fruits and vegetables with different colors represent different
+                        anti-oxidant content, which removes free radicals that damage our cells and fights inflammation
+                        in our body. Secondly, when we eat a large diversity of fruits/vegetables, it creates a wide
+                        variety of good bacteria in our gut, which creates a strong defense line between us and the
+                        environment, improves our immune system, and strengthens our long-term health.
+                        Eat fruits/vegetables of different colors: White (Bananas), Yellow (Pineapples, Mango), Orange
+                        (Orange, Papaya), Red (Apple, Strawberries, Raspberries, Tomatoes, Watermelon), Green (Avocado,
+                        Kale, Lettuce, Cucumber), Purple/Blue (Blackberries, Prunes). Here’s a full list under the color
+                        wheel.
+                        <br>
+                        If you have existing gut problems, be careful about eating excessive amounts of fiber as it may
+                        cause digestion and constipation issues.[3] Consume low-fiber foods as you let your gut heal,
+                        juice your fruits/vegetables to get their nutrients, and then build up your whole
+                        fruit/vegetable intake.
+
+
+                    </p>
+                    <p>
+                        10. <b>Cut down on processed food.</b> Processed food is not good because (a) most of the
+                        nutritional value
+                        is lost in the creation of these foods, and (b) the added preservatives are bad for our health.
+                        Many processed foods contain a high amount of salt which leads to higher blood pressure and
+                        heart disease. In general, the more ingredients a food has on the label (ending with ‘ite’ or
+                        ‘ate’), the more processed it is. Go for less processed food such as a baked potato over chips,
+                        fresh fruit over canned fruit, and intact grains over white bread.
+
+                    </p>
+                    <p>
+                        11. <b>Choose intact grains over refined grains.</b> Intact grains contain all the essential
+                        parts of
+                        the grain seed; in other words, they contain 100% of the original kernel, which includes the
+                        bran, germ, and endosperm. Because these layers are intact, the grain contains a richer
+                        nutritional profile of antioxidants, vitamins, and minerals than refined grains (which are
+                        grains stripped of the bran and germ layers through processing).[4]
+                        Go for intact grains like steel cut oats, barley, brown rice, quinoa, buckwheat, millet. Refined
+                        grains include white rice, white flour, most types of bread, white pasta, quick oats, and
+                        cereals. The more processing a grain has been through, the more refined it is. If you’re
+                        starting out, there’s no need to 100% ban refined grains — moderation is the key. Transition to
+                        a more intact-grains-based diet by swapping refined grains with intact grains for 1-2 meals a
+                        week and increasing it from there.
+
+
+                    </p>
+                    <p>12. <b>Love yourself. </b> Self-love is a crucial part of living a healthy life. When you have a
+                        negative
+                        self-image, it naturally weighs down on your mental outlook and health. How much do you love
+                        yourself on a scale of 1-10? Why? How can you love yourself more starting today? Read: How To
+                        Love Your Body (series) and Day 13: Appreciate Yourself of my Be a Better Me in 30 Days Program.
+                    </p>
+                    <p>13. <b>Walk/Run barefoot. </b> are many benefits of barefoot walking/running, from having a better
+                        posture to less stress for your feet and joints. If the terrain in your neighborhood is too
+                        sharp, wear barefoot shoes. </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
+
 </html>
