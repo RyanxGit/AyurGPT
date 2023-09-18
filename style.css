@@ -468,8 +468,9 @@ body.dark .footer .bottom-search:hover{
             display: none;
         }
         .home .ayurveda-content{
-            display: none;
+            display: block;
         }
+      
         .home #healthline-content{
             width: 100%;
             height: 100%;
@@ -502,5 +503,7 @@ left: 5%;
     font-size: 25px;
     color: var(--text-color);
     margin-bottom: 15px;
-
+}
+#healthline-content{
+    display: none;
 }
